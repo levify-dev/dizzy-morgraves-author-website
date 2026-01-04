@@ -1,2 +1,2 @@
-# dizzy-morgraves-author-website
-A public website for the author, Dizzy V. Morgraves
+# dizzy-v-morgraves
+Website for the author: Dizzy V Morgraves

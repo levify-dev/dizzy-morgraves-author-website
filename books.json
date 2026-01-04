@@ -1,0 +1,14 @@
+{
+
+    "books": [
+        {
+            "title": "Choke Chain",
+            "cover": "./assets/chokechain.png",
+            "featured": false,
+            "downloadLink": {
+                "kindle": "",
+                "epub": ""
+            }
+        }
+    ]
+}
