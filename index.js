@@ -29,4 +29,20 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     })
 
+    const downloadFeaturedTitleButton = document.querySelector('#download-featured-title');
+
+    downloadFeaturedTitleButton.addEventListener('click', () => {
+
+        const a = document.createElement('a');
+        a.href = './ebooks/Choke-Chain.epub';
+        a.download = 'Choke-Chain.epub';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+
+        gtag('event', 'download', {
+            file_name: 'Choke-Chain.epub'
+        })
+    })
+
 });
