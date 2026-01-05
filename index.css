@@ -1,12 +1,9 @@
-/* ===============================
-   GLOBAL RESET + BASE SETTINGS
-   =============================== */
-
 html {
   cursor: url("./assets/cursor/eye-of-satan.cur"), auto;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background-color: #000000;
@@ -15,12 +12,8 @@ html, body {
   font-size: 16px;
   background-image: url("./assets/textures/Texturelabs_Metal_184L.jpg");
   background-size: cover;
-    background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: hard-light;
-
-  /* background-repeat: round; */
-  /* background-attachment: fixed; */
-  /* font-family: "GothicPixels", serif; */
 }
 
 @font-face {
@@ -40,8 +33,6 @@ html, body {
 header {
   background-image: url("./assets/textures/Texturelabs_Metal_200L.jpg");
   background-size: cover;
-  /* background-repeat: round; */
-  /* background-attachment: fixed; */
   border-bottom: 2px solid #500;
   box-shadow: inset 0 -2px 5px #000;
   text-align: center;
@@ -52,8 +43,6 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("./assets/metal-panel.jpg");
-  background-size: cover;
   letter-spacing: 2px;
   color: #999;
   font-size: 32px;
@@ -64,15 +53,13 @@ header {
 }
 
 .metal-text {
-  background: linear-gradient(
-            180deg,
-            #d7d7d7 0%,
-            #ffffff 20%,
-            #a6a6a6 40%,
-            #e0e0e0 60%,
-            #8c8c8c 80%,
-            #d7d7d7 100%
-        );
+  background: linear-gradient(180deg,
+      #d7d7d7 0%,
+      #ffffff 20%,
+      #a6a6a6 40%,
+      #e0e0e0 60%,
+      #8c8c8c 80%,
+      #d7d7d7 100%);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -93,7 +80,6 @@ header {
    =============================== */
 
 #nav-sub-header {
-  /* background: #ba0000; */
   background: linear-gradient(to right, #500, #ba0000, #500);
   padding: 8px;
   text-align: center;
@@ -111,11 +97,10 @@ header {
   transition: text-shadow 250ms;
   user-select: none;
   -moz-user-select: none;
-  /* font-family: "Pixel"; */
 }
 
 #nav-sub-header a.active {
-    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.699);
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.699);
 }
 
 #nav-sub-header a:hover {
@@ -138,8 +123,7 @@ header {
   margin: 20px auto;
   padding: 15px;
   background: #0d0d0d;
-  /* border: 2px solid #500; */
-  border: 10px double #500; /* Ornate border */
+  border: 10px double #500;
   box-shadow: 0px 0px 15px #000;
   background: #0a0a0ac2;
   text-align: center;
@@ -167,6 +151,10 @@ header {
 
 #featured-title {
   display: flex;
+}
+
+#featured-title img {
+  width: 456px;
 }
 
 #book-data {
@@ -207,7 +195,6 @@ header {
 }
 
 #about-container p {
-    /* text-align: left; */
   padding: 0.25rem 2rem;
 }
 
@@ -227,7 +214,6 @@ a {
 
 a:hover {
   color: #ff0000;
-  /* background-color: #220000; */
   cursor: url("./assets/cursor/blood-middle-finger.cur"), pointer;
 }
 
@@ -241,11 +227,15 @@ footer {
   background: black;
   opacity: 0.75;
   font-family: "Pixel";
-  /* border-top: 2px solid #500; */
   color: #666;
   text-align: center;
   font-size: 13px;
   letter-spacing: 1px;
+}
+
+#attribution {
+  margin-top: 1rem;
+  font-size: 8px;
 }
 
 /* ===============================
@@ -259,7 +249,6 @@ footer {
   border: 1px solid #600;
   color: #b00;
   font-family: "HeavyMetal", serif;
-  /* text-transform: uppercase; */
   letter-spacing: 1px;
   cursor: pointer;
   box-shadow: inset 0 0 5px #000, 0 0 5px #400;
@@ -293,7 +282,7 @@ footer {
    MOBILE
    =============================== */
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #logo-sub-header {
     flex-direction: column;
   }
@@ -301,5 +290,13 @@ footer {
   .content {
     margin: 10px;
     padding: 10px;
+  }
+
+  #featured-title {
+    flex-direction: column !important;
+  }
+
+  #featured-title img {
+    width: 300px;
   }
 }

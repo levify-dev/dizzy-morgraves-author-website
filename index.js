@@ -1,10 +1,4 @@
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
-    const defaultPage = 'home';
     const navHeaderOptions = document.querySelectorAll('#nav-sub-header a');
     const pages = document.querySelectorAll('.content');
 
@@ -20,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Update page content
         const pageId = id.split('nav-')?.[1];
-        console.log({pageId})
         pages.forEach(page => {
             if (page.id === pageId) {
                 page.classList.toggle('active', true);
@@ -29,8 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         })
     }
-
-    console.log({navHeaderOptions});
 
     navHeaderOptions.forEach(opt => {
         opt.addEventListener('click', () => {
